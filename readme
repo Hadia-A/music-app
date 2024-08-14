@@ -1,0 +1,85 @@
+Python Music Player
+A feature-rich Python music player application that allows users to play, pause, resume, and stop audio files from their local library. The application is built using the Tkinter library for the graphical user interface (GUI) and Pygame for audio playback, with additional support for MP3 files via the Mutagen library.
+
+Table of Contents:
+Features
+Requirements
+Installation
+Usage
+Code Overview
+License
+
+Features:
+    User-Friendly Interface: A clean and intuitive GUI built with Tkinter.
+    Play Multiple Formats: Supports MP3 and WAV audio formats.
+    Progress Bar: Displays the progress of the currently playing track.
+    Volume Control: Adjustable volume control with a slider.
+    Track Details: Shows the total length of the track and the current playback time.
+    Pause/Resume Functionality: Pause and resume the track at any time.
+    Load Music Library: Load all supported audio files from a directory into the playlist.
+
+Requirements:
+    Python 3.x
+    Tkinter (included with Python)
+    Pygame
+    Mutagen
+
+Installation:
+    Clone the Repository
+
+Clone this repository to your local machine:
+
+    bash
+    Copy code
+    git clone https://github.com/yourusername/python-music-player.git
+    cd python-music-player
+    Install Dependencies
+
+Install the required Python packages using pip:
+
+    bash
+    Copy code
+    pip install pygame mutagen
+    Usage
+    Run the Application
+
+To start the music player, run the following command:
+
+    bash
+    Copy code
+    python music_player.py
+    Load Music Library
+
+    Click on File > Load Music Library.
+    Select a folder containing your audio files (MP3 or WAV).
+    The files will be loaded into the playlist.
+    Play Music
+
+    Select a song from the playlist and click the Play button to start playback.
+    Use the Pause, Resume, and Stop buttons to control playback.
+    Adjust Volume
+
+    Use the volume slider to adjust the playback volume.
+
+Code Overview:
+    
+File Structure
+    music_player.py: The main Python script containing the code for the music player application.
+    Key Components
+    Tkinter GUI: The graphical user interface is created using the Tkinter library.
+    Pygame Mixer: Handles audio playback, allowing the application to play, pause, resume, and stop audio files.
+    Mutagen: Used to retrieve metadata from MP3 files, such as the total length of the track.
+    
+Core Functions
+    load_music_library(): Loads all supported audio files from a user-selected directory into the playlist.
+    play_music(): Plays the selected track from the playlist and updates the track details and progress bar.
+    pause_music(): Pauses the currently playing track.
+    resume_music(): Resumes playback of the paused track.
+    stop_music(): Stops the playback and resets the progress bar.
+    set_volume(): Adjusts the playback volume based on the user's input.
+    
+Track Details and Progress Bar
+    The application displays the total length of the track and updates the progress bar and current time label as the track plays.
+
+License:
+This project is licensed under the MIT License. See the LICENSE file for more details.
