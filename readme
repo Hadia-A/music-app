@@ -31,7 +31,7 @@ Clone this repository to your local machine:
 
     bash
     Copy code
-    git clone https://github.com/Hadia-A/python-music-player.git
+    https://github.com/Hadia-A/music-app/blob/main/music.py
     cd python-music-player
     Install Dependencies
 
